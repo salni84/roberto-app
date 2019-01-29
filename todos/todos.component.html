@@ -1,0 +1,44 @@
+<h3> {{title}}</h3>
+
+<input type="text" #newTodo/>
+<button (click)="addTodo(newTodo.value); newTodo.value=''">Add</button>
+
+
+
+<p></p>
+
+<table>
+
+  <tr>
+
+ <th>Titel</th>
+
+ <th>Wichtigkeit</th>
+ <th>Erledigt</th>
+ <th>Actions</th>
+ <th>Bemerkungen</th>
+
+
+
+  </tr>
+
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.titel}}</td>
+    <td><select name="Priority">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select></td>
+    <td><input type="checkbox"></td>
+
+    <td><button (click)="deleteTodo(todo)" confirm="Are you sure?,">delete</button> </td>
+    <td><input type="text"></td>
+
+
+  </tr>
+
+</table>
+
+<p></p>
