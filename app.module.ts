@@ -17,6 +17,8 @@ import { CalendarComponent } from './kalender/kalender.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AppRoutingModule} from './app-routing.module';
 import { StartComponent } from './start/start.component';
+import { HeaderComponent } from './header/header.component';
+import { GoogleComponent } from './google/google.component';
 
 
 
@@ -35,6 +37,10 @@ import { StartComponent } from './start/start.component';
     PhotosComponent,
 
     StartComponent,
+
+    HeaderComponent,
+
+    GoogleComponent,
 
 
 
